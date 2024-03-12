@@ -59,14 +59,24 @@ body {
   color: var(--primary-color-third);
   font-family: "Roboto";
   font-weight: 400;
+  margin: 0;
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 address {
   font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 .link {
   text-decoration: none;
@@ -84,6 +94,7 @@ address {
   border-radius: 32px;
   background-color: var(--primary-color-second);
   color: var(--primary-color-first);
+  padding: 16px 32px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
@@ -172,5 +183,3 @@ footer .link {
   color: var(--secondary-color-second);
   font-size: 13px;
 }
-
-
