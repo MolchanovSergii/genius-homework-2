@@ -87,8 +87,9 @@ address {
 
 .link {
   text-decoration: none;
-  color: inherit;
+  color: var(--primary-color-third);
   font-size: 18px;
+  transition: color 0.3s, font-weight 0.3s;
 }
 
 .link:hover {
@@ -109,6 +110,7 @@ address {
   cursor: pointer;
   font-size: 18px;
   font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
@@ -131,12 +133,18 @@ address {
 
 .logo {
   fill: var(--primary-color-second);
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 /* HEADER */
 
 .header {
   position: absolute;
   width: 100%;
+  min-width: 1440px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(3px);
 }
@@ -161,6 +169,7 @@ address {
 
 .header-social {
   fill: var(--primary-color-third);
+  transition: fill 0.3s;
 }
 
 .header-social:hover {
@@ -170,6 +179,8 @@ address {
 
 .hero-container {
   height: 657px;
+  width: 100%;
+  min-width: 1440px;
   padding-top: 123px;
   background: linear-gradient(
       89deg,
@@ -345,17 +356,22 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   border: var(--primary-color-third) solid 1px;
   fill: var(--primary-color-third);
   flex-shrink: 0;
   cursor: pointer;
+  transition: background 0.3s, fill 0.3s, border 0.3s;
 }
 
 .carousel-button:hover {
   background: var(--primary-color-second);
   fill: #fff;
   border: transparent;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .carousel-procedures-list {
@@ -470,6 +486,7 @@ footer .link {
 }
 .footer-social {
   fill: var(--primary-color-first);
+  transition: fill 0.3s;
 }
 
 .footer-social:hover {
@@ -486,4 +503,42 @@ footer .link {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* MODAL */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  height: 100%;
+  max-height: 681px;
+  width: 100%;
+  max-width: 723px;
+  background-color: var(--primary-color-third);
+  border-radius: 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }
