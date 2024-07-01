@@ -97,8 +97,13 @@ address {
   font-weight: 700;
 }
 
-.hidden-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .button {
@@ -422,10 +427,25 @@ address {
 }
 
 .contact-form {
+  padding: 48px 74px;
+  width: 423px;
+  height: 481px;
   border-radius: 32px;
   border: none;
   background-color: var(--primary-color-third);
   width: 423px;
+}
+
+.form-field.contact-field {
+  margin-bottom: 16px;
+}
+
+.contact-form-text {
+  color: var(--primary-color-first);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
 }
 
 /* FOOTER */
@@ -528,6 +548,7 @@ footer .link {
 }
 
 .modal {
+  padding: 42px 144px;
   position: relative;
   height: 100%;
   max-height: 681px;
@@ -535,6 +556,7 @@ footer .link {
   max-width: 723px;
   background-color: var(--primary-color-third);
   border-radius: 48px;
+  /* overflow-y: auto; */
 }
 
 .modal-btn-close {
@@ -542,3 +564,91 @@ footer .link {
   top: 42px;
   right: 42px;
 }
+
+.modal-title {
+  font-family: Play;
+  color: var(--primary-color-first);
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0 auto 40px;
+}
+
+.modal-text {
+  color: var(--primary-color-first);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  width: 274px;
+  margin: 0 auto 32px;
+}
+
+/* FORM */
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  color: var(--primary-color-first);
+  font-family: Roboto;
+  font-size: 13px;
+}
+
+.form-input {
+  width: 100%;
+  height: 52px;
+  flex-shrink: 0;
+  outline: none;
+  color: var(--primary-color-first);
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 32px;
+  border: 2px solid var(--secondary-color-second);
+  padding: 18px 32px;
+  transition: background-color 0.3s;
+}
+
+.form-input::placeholder {
+  color: var(--primary-color-first);
+}
+
+.form-input:focus,
+.form-input:hover {
+  background-color: var(--secondary-color-second);
+}
+
+.modal-btn-submit {
+  display: block;
+  margin: 0 auto 10px;
+}
+.modal-btn-description {
+  width: 213px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--secondary-color-second);
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.btn-description-decoration {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Стили для полосы прокрутки
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-second);
+  border-radius: 5px;
+  height: 185px;
+  max-height: 33%;
+} */

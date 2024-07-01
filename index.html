@@ -117,7 +117,7 @@
               <ul class="why-we-list">
                 <li>
                   <article class="why-we-item">
-                    <h3 class="hidden-title">Чому люди нас обирають</h3>
+                    <h3 class="visually-hidden">Чому люди нас обирають</h3>
                     <svg width="48" height="48">
                       <use href="./images/icons.svg#icon-first"></use>
                     </svg>
@@ -129,7 +129,7 @@
                 </li>
                 <li>
                   <article class="why-we-item">
-                    <h3 class="hidden-title">Чому люди нас обирають</h3>
+                    <h3 class="visually-hidden">Чому люди нас обирають</h3>
                     <svg width="48" height="48">
                       <use href="./images/icons.svg#icon-second"></use>
                     </svg>
@@ -141,7 +141,7 @@
                 </li>
                 <li>
                   <article class="why-we-item">
-                    <h3 class="hidden-title">Чому люди нас обирають</h3>
+                    <h3 class="visually-hidden">Чому люди нас обирають</h3>
                     <svg width="48" height="48">
                       <use href="./images/icons.svg#icon-third"></use>
                     </svg>
@@ -206,7 +206,60 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-              <div class="contact-form"></div>
+              <div class="contact-form">
+                <h2 class="visually-hidden">Контактна форма</h2>
+                <p class="contact-form-text">
+                  Запишіться <span class="accent">безкоштовно</span> та
+                  отримайте подарунок
+                </p>
+                <form name="contact-form" autocomplete="off" novalidate>
+                  <div class="form-field contact-field">
+                    <label class="form-label visually-hidden" for="user-name">
+                      Ваше ім'я та прізвище
+                    </label>
+                    <input
+                      class="form-input"
+                      id="user-name"
+                      name="user-name"
+                      type="text"
+                      placeholder="Ваше ім'я та прізвище"
+                    />
+                  </div>
+                  <div class="form-field contact-field">
+                    <label class="form-label visually-hidden" for="user-tel">
+                      Ваш номер телефону
+                    </label>
+                    <input
+                      class="form-input"
+                      id="user-tel"
+                      name="user-tel"
+                      type="tel"
+                      placeholder="Ваш номер телефону"
+                    />
+                  </div>
+                  <div class="form-field contact-field">
+                    <label class="form-label visually-hidden" for="user-email">
+                      Ваша електронна пошта
+                    </label>
+                    <input
+                      class="form-input"
+                      id="user-email"
+                      name="user-email"
+                      type="email"
+                      placeholder="Ваша електронна пошта"
+                    />
+                  </div>
+                  <button type="submit" class="button modal-btn-submit">
+                    Замовити дзвінок
+                  </button>
+                  <p class="modal-btn-description">
+                    Натискаючи на кнопку я погоджуюсь
+                    <span class="btn-description-decoration"
+                      >з політикою конфіденційності</span
+                    >
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -302,6 +355,58 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">X</button>
+        <h2 class="modal-title">Замовити дзвінок</h2>
+        <p class="modal-text">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name">
+              Ваше ім'я та прізвище
+            </label>
+            <input
+              class="form-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              placeholder="Ваше ім'я та прізвище"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel">
+              Ваш номер телефону
+            </label>
+            <input
+              class="form-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              placeholder="Ваш номер телефону"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email">
+              Ваша електронна пошта
+            </label>
+            <input
+              class="form-input"
+              id="user-email"
+              name="user-email"
+              type="email"
+              placeholder="Ваша електронна пошта"
+            />
+          </div>
+          <button type="submit" class="button modal-btn-submit">
+            Замовити дзвінок
+          </button>
+          <p class="modal-btn-description">
+            Натискаючи на кнопку я погоджуюсь
+            <span class="btn-description-decoration"
+              >з політикою конфіденційності</span
+            >
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
