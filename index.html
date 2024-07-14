@@ -212,7 +212,7 @@
                   Запишіться <span class="accent">безкоштовно</span> та
                   отримайте подарунок
                 </p>
-                <form name="contact-form" autocomplete="off" novalidate>
+                <form name="contact-form" autocomplete="off">
                   <div class="form-field contact-field">
                     <label class="form-label visually-hidden" for="user-name">
                       Ваше ім'я та прізвище
@@ -223,6 +223,9 @@
                       name="user-name"
                       type="text"
                       placeholder="Ваше ім'я та прізвище"
+                      minlength="3"
+                      maxlength="12"
+                      required
                     />
                   </div>
                   <div class="form-field contact-field">
@@ -235,6 +238,8 @@
                       name="user-tel"
                       type="tel"
                       placeholder="Ваш номер телефону"
+                      pattern="^\+[0-9]{12}"
+                      required
                     />
                   </div>
                   <div class="form-field contact-field">
@@ -247,6 +252,7 @@
                       name="user-email"
                       type="email"
                       placeholder="Ваша електронна пошта"
+                      required
                     />
                   </div>
                   <button type="submit" class="button modal-btn-submit">
@@ -354,13 +360,17 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">X</button>
+        <button class="modal-btn-close" type="button">
+          <svg width="42" height="42">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
         <h2 class="modal-title">Замовити дзвінок</h2>
         <p class="modal-text">
           Запишіться <span class="accent">безкоштовно</span> та отримайте
           подарунок
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Ваше ім'я та прізвище
@@ -371,6 +381,9 @@
               name="user-name"
               type="text"
               placeholder="Ваше ім'я та прізвище"
+              minlength="3"
+              maxlength="12"
+              required
             />
           </div>
           <div class="form-field">
@@ -383,6 +396,8 @@
               name="user-tel"
               type="tel"
               placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
             />
           </div>
           <div class="form-field">
@@ -395,6 +410,7 @@
               name="user-email"
               type="email"
               placeholder="Ваша електронна пошта"
+              required
             />
           </div>
           <button type="submit" class="button modal-btn-submit">

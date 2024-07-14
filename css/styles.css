@@ -433,7 +433,10 @@ address {
   border-radius: 32px;
   border: none;
   background-color: var(--primary-color-third);
-  width: 423px;
+  background-image: url(/images/form-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form-field.contact-field {
@@ -451,6 +454,10 @@ address {
 /* FOOTER */
 footer {
   background-color: var(--primary-color-third);
+  background-image: url(/images/footer-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer .link {
@@ -555,14 +562,29 @@ footer .link {
   width: 100%;
   max-width: 723px;
   background-color: var(--primary-color-third);
+  background-image: url(/images/modal-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 48px;
   /* overflow-y: auto; */
 }
 
 .modal-btn-close {
+  background: transparent;
+  border: none;
   position: absolute;
   top: 42px;
   right: 42px;
+  cursor: pointer;
+  fill: transparent;
+  stroke: var(--primary-color-first);
+  transition: stroke 0.3s;
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  stroke: var(--primary-color-second);
 }
 
 .modal-title {
@@ -623,6 +645,7 @@ footer .link {
   display: block;
   margin: 0 auto 10px;
 }
+
 .modal-btn-description {
   width: 213px;
   text-align: center;
@@ -634,7 +657,7 @@ footer .link {
 
 .btn-description-decoration {
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 }
 
 /* Стили для полосы прокрутки
