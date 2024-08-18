@@ -366,11 +366,11 @@ address {
   fill: var(--primary-color-third);
   flex-shrink: 0;
   cursor: pointer;
-  transition: background 0.3s, fill 0.3s, border 0.3s;
+  transition: background-color 0.3s, fill 0.3s, border 0.3s;
 }
 
 .carousel-button:hover {
-  background: var(--primary-color-second);
+  background-color: var(--primary-color-second);
   fill: #fff;
   border: transparent;
 }
@@ -452,7 +452,7 @@ address {
 }
 
 /* FOOTER */
-footer {
+.footer {
   background-color: var(--primary-color-third);
   background-image: url(/images/footer-background.png);
   background-position: center center;
@@ -460,9 +460,13 @@ footer {
   background-repeat: no-repeat;
 }
 
-footer .link {
+.footer .link {
   color: var(--primary-color-first);
   font-size: 16px;
+}
+
+.footer .link:hover {
+  color: var(--primary-color-second);
 }
 
 .footer-container {
@@ -529,7 +533,7 @@ footer .link {
 .footer-background {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -100px;
 }
 
 /* MODAL */
