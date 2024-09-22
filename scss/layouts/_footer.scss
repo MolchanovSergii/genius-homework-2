@@ -1,0 +1,78 @@
+.footer {
+  background-color: var(--primary-color-third);
+  background-image: url(/images/footer-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & .link {
+    color: var(--primary-color-first);
+    font-size: 16px;
+    transition: color 0.3s;
+    &:hover {
+      color: var(--primary-color-second);
+    }
+  }
+
+  &__container {
+    position: relative;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__nav {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__logo {
+    flex-basis: 50%;
+  }
+
+  &__nav-list {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__address {
+    flex-basis: 50%;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__address-link {
+    flex-basis: 50%;
+  }
+
+  &__address-item {
+    margin-bottom: 16px;
+  }
+
+  &__address-social {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__social {
+    fill: var(--primary-color-first);
+    transition: fill 0.3s;
+    &:hover {
+      fill: var(--primary-color-second);
+    }
+  }
+
+  &__address-info {
+    flex-basis: 50%;
+  }
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+  }
+}

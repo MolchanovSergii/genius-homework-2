@@ -1,0 +1,58 @@
+@import "./base";
+
+@import "./utils/fonts";
+@import "./utils/texts";
+@import "./utils/variable";
+@import "./utils/utils";
+
+@import "./components/containers";
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/logos";
+@import "./components/for-background";
+@import "./components/stars";
+@import "./components/procedures-cards";
+@import "./components/forms";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/section-about-us";
+@import "./layouts/section-why-we";
+@import "./layouts/section-our-procedures";
+@import "./layouts/section-contacts";
+@import "./layouts/footer";
+@import "./layouts/modal";
+
+/* HEADER */
+
+/* HERO SECTION */
+
+/* ABOUT US SECTION */
+
+/* WHY WE SECTION */
+
+/* OUR PROCEDURES */
+
+/* CONTACTS */
+
+/* FOOTER */
+
+/* MODAL */
+
+/* FORM */
+
+/* Стили для полосы прокрутки
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color-second);
+  border-radius: 5px;
+  height: 185px;
+  max-height: 33%;
+} */

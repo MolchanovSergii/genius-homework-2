@@ -1,0 +1,45 @@
+.hero {
+  &__container {
+    height: 657px;
+    width: 100%;
+    min-width: 1440px;
+    padding-top: 123px;
+    background: linear-gradient(
+        89deg,
+        #fff 30.62%,
+        rgba(255, 255, 255, 0.85) 41.31%,
+        rgba(255, 255, 255, 0.19) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url(../images/hero-background.png);
+  }
+
+  &__wrapper {
+    width: 529px;
+    padding-bottom: 127px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-family: "Play";
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    margin-bottom: 14px;
+    &__title {
+      width: 238px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.logo {
+  fill: var(--primary-color-second);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

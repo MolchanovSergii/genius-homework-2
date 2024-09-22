@@ -1,0 +1,20 @@
+.star-first {
+  position: absolute;
+  fill: var(--secondary-color-third);
+  bottom: 285px;
+  right: 303px;
+}
+
+.star-second {
+  position: absolute;
+  fill: var(--primary-color-second);
+  top: 33px;
+  left: 440px;
+}
+
+.star-third {
+  position: absolute;
+  fill: var(--secondary-color-second);
+  top: 270px;
+  right: 5px;
+}

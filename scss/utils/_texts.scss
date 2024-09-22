@@ -1,0 +1,24 @@
+.accent {
+  color: var(--primary-color-second);
+}
+
+.section-title {
+  text-align: center;
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto 48px;
+}
+
+.clinic-name {
+  color: var(--primary-color-second);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.copyright {
+  color: var(--secondary-color-second);
+  font-size: 13px;
+  margin-top: 16px;
+}

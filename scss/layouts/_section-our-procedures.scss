@@ -1,0 +1,14 @@
+.section-our-procedures {
+  padding-top: 96px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}

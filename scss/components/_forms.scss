@@ -1,0 +1,32 @@
+.form-field {
+  margin-bottom: 24px;
+  text-align: center;
+
+  &__label {
+    color: var(--primary-color-first);
+    font-family: Roboto;
+    font-size: 13px;
+  }
+
+  &__input {
+    width: 310px;
+    height: 52px;
+    flex-shrink: 0;
+    outline: none;
+    color: var(--primary-color-first);
+    font-size: 13px;
+    background-color: transparent;
+    border-radius: 32px;
+    border: 2px solid var(--secondary-color-second);
+    padding: 18px 32px;
+    transition: background-color 0.3s;
+    &::placeholder {
+      color: var(--primary-color-first);
+    }
+
+    &:focus,
+    &:hover {
+      background-color: var(--secondary-color-second);
+    }
+  }
+}

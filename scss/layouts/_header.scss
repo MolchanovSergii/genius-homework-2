@@ -1,0 +1,31 @@
+.header {
+  position: absolute;
+  width: 100%;
+  min-width: 1440px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(3px);
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__menu {
+      display: flex;
+      gap: 56px;
+      margin: 0 10px;
+    }
+    &__social {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__social {
+    fill: var(--primary-color-third);
+    transition: fill 0.3s;
+    &:hover {
+      fill: var(--primary-color-second);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.section-contacts {
+  padding-top: 96px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__map {
+    border-radius: 32px;
+    border: none;
+    flex-shrink: 0;
+  }
+
+  &__form {
+    padding: 48px 57px;
+    width: 423px;
+    height: 481px;
+    border-radius: 32px;
+    border: none;
+    background-color: var(--primary-color-third);
+    background-image: url(/images/form-background.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__form-text {
+    width: 274px;
+    color: var(--primary-color-first);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+}
+
+.form-field.contact-field {
+  margin-bottom: 16px;
+}
