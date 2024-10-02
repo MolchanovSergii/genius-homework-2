@@ -1,31 +1,65 @@
 .header {
   position: absolute;
   width: 100%;
-  min-width: 1440px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(3px);
+  background-color: transparent;
+  backdrop-filter: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+  }
 
   &__nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    &__menu {
-      display: flex;
-      gap: 56px;
-      margin: 0 10px;
-    }
-    &__social {
-      display: flex;
-      gap: 32px;
-    }
-  }
+    gap: 20px;
+    padding-top: 16px;
 
-  &__social {
-    fill: var(--primary-color-third);
-    transition: fill 0.3s;
-    &:hover {
-      fill: var(--primary-color-second);
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &__menu-list {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        gap: 56px;
+        margin: 0 10px;
+      }
+    }
+
+    &__social-list {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        gap: 32px;
+      }
+    }
+
+    &__social-item {
+      fill: var(--primary-color-third);
+      transition: fill 0.3s;
+      &:hover {
+        fill: var(--primary-color-second);
+      }
+    }
+
+    &__burger {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      align-self: center;
+      fill: var(--primary-color-first);
+
+      @media screen and (min-width: $bp-tablet) {
+        display: none;
+      }
     }
   }
 }

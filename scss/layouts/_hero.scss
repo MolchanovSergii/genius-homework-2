@@ -1,8 +1,8 @@
 .hero {
   &__container {
-    height: 657px;
+    // height: 657px;
     width: 100%;
-    min-width: 1440px;
+    // min-width: 1440px;
     padding-top: 123px;
     background: linear-gradient(
         89deg,
@@ -12,6 +12,9 @@
         rgba(255, 255, 255, 0) 72.78%
       ),
       url(../images/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
 
   &__wrapper {
