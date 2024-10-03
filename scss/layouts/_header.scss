@@ -26,6 +26,8 @@
 
       @media screen and (min-width: $bp-tablet) {
         display: flex;
+        align-items: center;
+        text-align: center;
         gap: 56px;
         margin: 0 10px;
       }

@@ -1,48 +1,96 @@
-.hero {
+.hero-section {
   &__container {
-    // height: 657px;
-    width: 100%;
-    // min-width: 1440px;
-    padding-top: 123px;
+    padding: 70px 0;
     background: linear-gradient(
-        89deg,
-        #fff 30.62%,
-        rgba(255, 255, 255, 0.85) 41.31%,
-        rgba(255, 255, 255, 0.19) 58.65%,
-        rgba(255, 255, 255, 0) 72.78%
+        57deg,
+        #fff 20.92%,
+        rgba(255, 255, 255, 0.78) 44.46%,
+        rgba(255, 255, 255, 0.2) 58.9%,
+        rgba(255, 255, 255, 0) 72.45%
       ),
-      url(../images/hero-background.png);
+      url(../../images/hero-background.png);
+
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-top: 123px;
+      padding-bottom: 127px;
+      padding-left: 208px;
+      background: linear-gradient(
+          89deg,
+          #fff 30.62%,
+          rgba(255, 255, 255, 0.85) 41.31%,
+          rgba(255, 255, 255, 0.19) 58.65%,
+          rgba(255, 255, 255, 0) 72.78%
+        ),
+        url(../../images/hero-background.png);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
   }
 
   &__wrapper {
-    width: 529px;
-    padding-bottom: 127px;
+    width: 100%;
+    max-width: 330px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 529px;
+      text-align: start;
+      margin: 0;
+    }
   }
 
   &__title {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
   }
 
   &__name {
-    font-family: "Play";
-    font-size: 140px;
+    font-family: Play;
+    font-size: 54px;
     font-weight: 700;
-    line-height: 0.8;
+    line-height: 0.85;
     text-transform: capitalize;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      line-height: 0.8;
+      margin-bottom: 40px;
+    }
   }
 
   &__button {
-    margin-bottom: 14px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 14px;
+    }
+
     &__title {
-      width: 238px;
+      width: 100%;
       text-align: center;
-      font-size: 12px;
-      line-height: 1.5;
+      margin: 0 auto;
+      max-width: 186px;
+      font-size: 11px;
+      line-height: 1.63;
+
+      @media screen and (min-width: $bp-tablet) {
+        max-width: 238px;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 0;
+      }
     }
   }
 }
