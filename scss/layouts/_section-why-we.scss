@@ -1,14 +1,25 @@
 .section-why-we {
-  padding-top: 175px;
+  padding-top: 176px;
 
   &__title {
-    width: 432px;
+    width: 210px;
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 432px;
+    }
   }
 
   &__list {
     display: flex;
-    gap: 56px;
+    flex-direction: column;
+    gap: 16px;
     justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 56px;
+    }
   }
 
   &__item {
