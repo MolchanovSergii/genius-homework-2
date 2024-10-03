@@ -1,32 +1,80 @@
 .section-about-us {
   display: flex;
   gap: 28px;
+  overflow: visible;
+
+  @media screen and (min-width: $bp-tablet) {
+    justify-content: center;
+    overflow: visible;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    justify-content: space-between;
+    overflow: hidden;
+  }
 
   &__description {
+    position: relative;
     font-size: 22px;
     line-height: 1.7;
     margin-top: 40px;
-    padding-right: 50px;
+
+    & .star-first {
+      display: block;
+      position: absolute;
+      bottom: -46px;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      animation-name: spin;
+      animation-duration: 4s;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: none;
+      }
+    }
 
     &__title {
+      width: 264px;
       text-align: left;
-      margin: 0 0 40px 0;
-      width: 530px;
+      margin: 0 0 24px 0;
+
+      @media screen and (min-width: $bp-tablet) {
+        margin: 0 0 40px 0;
+        width: 530px;
+      }
     }
 
     &__text {
-      margin-bottom: 40px;
-      display: block;
-      width: 709px;
+      width: 320px;
+      font-size: 18px;
+      margin-bottom: 16px;
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 22px;
+        margin-bottom: 40px;
+        display: block;
+        width: 709px;
+      }
+
+      & .clinic-name {
+        color: var(--primary-color-third);
+      }
     }
   }
-  &__image {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    flex-grow: 1;
-    position: relative;
 
+  &__image {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      flex-grow: 1;
+      position: relative;
+    }
   }
 }
 
@@ -34,7 +82,6 @@
 .second-image {
   width: 335px;
   height: 328px;
-  flex-shrink: 0;
   border-radius: 327px;
   background: #d9d9d9;
 }
