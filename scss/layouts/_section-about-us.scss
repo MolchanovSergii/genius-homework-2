@@ -2,6 +2,7 @@
   display: flex;
   gap: 28px;
   overflow: visible;
+  justify-content: center;
 
   @media screen and (min-width: $bp-tablet) {
     justify-content: center;
