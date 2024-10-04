@@ -48,12 +48,59 @@
               </a>
             </li>
           </ul>
-          <button class="header__nav__burger" type="button">
+          <button class="header__nav__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
         </nav>
+        <div class="mobile-menu">
+          <nav class="mobile-menu__nav">
+            <a href="/">
+              <svg class="logo mobile-menu__nav__logo" width="74" height="42">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <ul class="mobile-menu__nav__menu-list">
+              <li><a class="link" href="#section-about-us">Про нас</a></li>
+              <li><a class="link" href="#section-why-we">Чому ми</a></li>
+              <li>
+                <a class="link" href="#section-our-procedures"
+                  >Наші процедури</a
+                >
+              </li>
+              <li><a class="link" href="#section-contacts">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu__nav__social-list">
+              <li>
+                <a class="link mobile-menu__nav__social-item" href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="mobile-menu__nav__social-item" href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="link mobile-menu__nav__social-item" href="#">
+                  <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -164,62 +211,62 @@
         </div>
       </section>
       <!-- <section id="section-our-procedures" class="section-our-procedures">
-          <div class="container">
-            <h2 class="section-title">
-              Наші <span class="accent">процедури</span>
-            </h2>
-            <div class="section-our-procedures__container">
-              <button class="carousel-button" type="button">
-                <svg width="44" height="44">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
-              </button>
-              <ul class="section-our-procedures__list">
-                <li class="section-our-procedures__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures-cards__image"
-                      src="./images/our_procedures_first.jpg"
-                      alt="procedure image"
-                    />
-                    <h3 class="procedures-cards__description">
-                      Маски для обличчя
-                    </h3>
-                  </article>
-                </li>
-                <li class="section-our-procedures__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures-cards__image"
-                      src="./images/our_procedures_second.jpg"
-                      alt="procedure image"
-                    />
-                    <h3 class="procedures-cards__description">
-                      Ін'єкції для обличчя
-                    </h3>
-                  </article>
-                </li>
-                <li class="section-our-procedures__item">
-                  <article class="procedures-cards">
-                    <img
-                      class="procedures-cards__image"
-                      src="./images/our_procedures_third.jpg"
-                      alt="procedure image"
-                    />
-                    <h3 class="procedures-cards__description">
-                      Очищення обличчя
-                    </h3>
-                  </article>
-                </li>
-              </ul>
-              <button class="carousel-button next" type="button">
-                <svg width="44" height="44">
-                  <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
-              </button>
-            </div>
+        <div class="container">
+          <h2 class="section-title">
+            Наші <span class="accent">процедури</span>
+          </h2>
+          <div class="section-our-procedures__container">
+            <button class="carousel-button" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="section-our-procedures__list">
+              <li class="section-our-procedures__item">
+                <article class="procedures-cards">
+                  <img
+                    class="procedures-cards__image"
+                    src="./images/our_procedures_first.jpg"
+                    alt="procedure image"
+                  />
+                  <h3 class="procedures-cards__description">
+                    Маски для обличчя
+                  </h3>
+                </article>
+              </li>
+              <li class="section-our-procedures__item">
+                <article class="procedures-cards">
+                  <img
+                    class="procedures-cards__image"
+                    src="./images/our_procedures_second.jpg"
+                    alt="procedure image"
+                  />
+                  <h3 class="procedures-cards__description">
+                    Ін'єкції для обличчя
+                  </h3>
+                </article>
+              </li>
+              <li class="section-our-procedures__item">
+                <article class="procedures-cards">
+                  <img
+                    class="procedures-cards__image"
+                    src="./images/our_procedures_third.jpg"
+                    alt="procedure image"
+                  />
+                  <h3 class="procedures-cards__description">
+                    Очищення обличчя
+                  </h3>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button next" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
           </div>
-        </section> -->
+        </div>
+      </section> -->
       <!-- <section id="section-contacts" class="section-contacts">
           <div class="container">
             <h2 class="section-title">
@@ -464,5 +511,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

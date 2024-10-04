@@ -1,5 +1,9 @@
 .section-our-procedures {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 96px;
+  }
 
   &__container {
     display: flex;
