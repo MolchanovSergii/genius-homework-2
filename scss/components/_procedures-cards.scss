@@ -12,11 +12,6 @@
     #011c44 101.39%
   );
   overflow: hidden;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.01);
-  }
 
   &__image {
     position: absolute;
