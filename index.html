@@ -7,6 +7,10 @@
     <title>Beauty Zone</title>
 
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -223,60 +227,113 @@
           <h2 class="section-title">
             Наші <span class="accent">процедури</span>
           </h2>
-          <div class="section-our-procedures__container">
-            <button class="carousel-button" type="button">
+          <div class="section-our-procedures__slider">
+            <button class="section-our-procedures__button carousel-button prev" type="button">
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="section-our-procedures__list">
-              <li class="section-our-procedures__item">
-                <article class="procedures-cards">
-                  <img
-                    class="procedures-cards__image"
-                    srcset="
-                      ./images/our_procedures_first.jpg    1x,
-                      ./images/our_procedures_first@2x.jpg 2x
-                    "
-                    src="./images/our_procedures_first.jpg"
-                    alt="procedure image"
-                  />
-                  <h3 class="procedures-cards__description">
-                    Маски для обличчя
-                  </h3>
-                </article>
-              </li>
-              <li class="section-our-procedures__item">
-                <article class="procedures-cards">
-                  <img
-                    class="procedures-cards__image"
-                    srcset="./images/our_procedures_second@2x.jpg 2x"
-                    src="./images/our_procedures_second.jpg"
-                    alt="procedure image"
-                  />
-                  <h3 class="procedures-cards__description">
-                    Ін'єкції для обличчя
-                  </h3>
-                </article>
-              </li>
-              <li class="section-our-procedures__item">
-                <article class="procedures-cards">
-                  <img
-                    class="procedures-cards__image"
-                    srcset="
-                      ./images/our_procedures_third.jpg    1x,
-                      ./images/our_procedures_third@2x.jpg 2x
-                    "
-                    src="./images/our_procedures_third.jpg"
-                    alt="procedure image"
-                  />
-                  <h3 class="procedures-cards__description">
-                    Очищення обличчя
-                  </h3>
-                </article>
-              </li>
-            </ul>
-            <button class="carousel-button next" type="button">
+            <div class="section-our-procedures__container swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="
+                        ./images/our_procedures_first.jpg    1x,
+                        ./images/our_procedures_first@2x.jpg 2x
+                      "
+                      src="./images/our_procedures_first.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Маски для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="./images/our_procedures_second@2x.jpg 2x"
+                      src="./images/our_procedures_second.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Ін'єкції для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="
+                        ./images/our_procedures_third.jpg    1x,
+                        ./images/our_procedures_third@2x.jpg 2x
+                      "
+                      src="./images/our_procedures_third.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Очищення обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="
+                        ./images/our_procedures_first.jpg    1x,
+                        ./images/our_procedures_first@2x.jpg 2x
+                      "
+                      src="./images/our_procedures_first.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Маски для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="./images/our_procedures_second@2x.jpg 2x"
+                      src="./images/our_procedures_second.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Ін'єкції для обличчя
+                    </h3>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="procedures-cards">
+                    <img
+                      class="procedures-cards__image"
+                      srcset="
+                        ./images/our_procedures_third.jpg    1x,
+                        ./images/our_procedures_third@2x.jpg 2x
+                      "
+                      src="./images/our_procedures_third.jpg"
+                      alt="procedure image"
+                    />
+                    <h3 class="procedures-cards__description">
+                      Очищення обличчя
+                    </h3>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="paginaton__button"></span>
+                <span class="paginaton__button"></span>
+                <span class="paginaton__button"><span>
+                <span class="paginaton__button"></span>
+              </div>
+            </div>
+            <button class="section-our-procedures__button carousel-button next" type="button">
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -527,6 +584,8 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/our-procedure-carousel.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
