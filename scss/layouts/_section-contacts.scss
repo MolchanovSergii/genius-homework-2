@@ -1,37 +1,72 @@
 .section-contacts {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
   &__container {
     display: flex;
-    justify-content: center;
-    gap: 32px;
+    flex-direction: column-reverse;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 32px;
+    }
   }
 
   &__map {
-    border-radius: 32px;
+    border-radius: 0;
     border: none;
+    width: 100%;
+    height: 232px;
+    align-self: center;
     flex-shrink: 0;
+    width: calc(100% + 40px);
+
+    @media screen and (min-width: $bp-desktop) {
+      margin: 0;
+      width: 605px;
+      height: 481px;
+      border-radius: 32px;
+    }
   }
 
   &__form {
-    padding: 48px 57px;
-    width: 423px;
-    height: 481px;
-    border-radius: 32px;
+    padding: 42px 24px;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
     border: none;
     background-color: var(--primary-color-third);
     background-image: url(../images/form-background.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 48px 56px;
+      width: 423px;
+      height: 481px;
+      border-radius: 32px;
+    }
   }
 
   &__form-text {
-    width: 274px;
+    width: 272px;
     color: var(--primary-color-first);
     text-align: center;
     font-size: 22px;
     font-weight: 600;
+    margin-bottom: 24px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desktop) {
+    }
+    width: 274px;
     margin-bottom: 32px;
   }
 }
