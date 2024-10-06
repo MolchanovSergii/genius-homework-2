@@ -524,70 +524,72 @@
       </div>
     </footer>
     <div class="backdrop is-hidden">
-      <div class="modal">
-        <button class="modal__btn-close modal-btn-close" type="button">
-          <svg width="42" height="42">
-            <use href="./images/icons.svg#icon-modal-close"></use>
-          </svg>
-        </button>
-        <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__text">
-          Запишіться <span class="accent">безкоштовно</span> та отримайте
-          подарунок
-        </p>
-        <form name="modal-form" autocomplete="off">
-          <div class="form-field">
-            <label class="form-field__label visually-hidden" for="user-name">
-              Ваше ім'я та прізвище
-            </label>
-            <input
-              class="form-field__input"
-              id="user-name-modal-form"
-              name="user-name-modal-form"
-              type="text"
-              placeholder="Ваше ім'я та прізвище"
-              minlength="3"
-              maxlength="12"
-              required
-            />
-          </div>
-          <div class="form-field">
-            <label class="form-field__label visually-hidden" for="user-tel">
-              Ваш номер телефону
-            </label>
-            <input
-              class="form-field__input"
-              id="user-tel-modal-form"
-              name="user-tel-modal-form"
-              type="tel"
-              placeholder="Ваш номер телефону"
-              pattern="^\+[0-9]{12}"
-              required
-            />
-          </div>
-          <div class="form-field">
-            <label class="form-field__label visually-hidden" for="user-email">
-              Ваша електронна пошта
-            </label>
-            <input
-              class="form-field__input"
-              id="user-email-modal-form"
-              name="user-email-modal-form"
-              type="email"
-              placeholder="Ваша електронна пошта"
-              required
-            />
-          </div>
-          <button type="submit" class="button modal__btn-submit">
-            Записатись безкоштовно
+      <div>
+        <div class="modal">
+          <button class="modal__btn-close modal-btn-close" type="button">
+            <svg width="42" height="42">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
           </button>
-          <p class="modal__btn-description">
-            Натискаючи на кнопку я погоджуюсь
-            <span class="modal__btn-description--decoration"
-              >з політикою конфіденційності</span
-            >
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <p class="modal__text">
+            Запишіться <span class="accent">безкоштовно</span> та отримайте
+            подарунок
           </p>
-        </form>
+          <form name="modal-form" autocomplete="off">
+            <div class="form-field">
+              <label class="form-field__label visually-hidden" for="user-name">
+                Ваше ім'я та прізвище
+              </label>
+              <input
+                class="form-field__input"
+                id="user-name-modal-form"
+                name="user-name-modal-form"
+                type="text"
+                placeholder="Ваше ім'я та прізвище"
+                minlength="3"
+                maxlength="12"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label visually-hidden" for="user-tel">
+                Ваш номер телефону
+              </label>
+              <input
+                class="form-field__input"
+                id="user-tel-modal-form"
+                name="user-tel-modal-form"
+                type="tel"
+                placeholder="Ваш номер телефону"
+                pattern="^\+[0-9]{12}"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-field__label visually-hidden" for="user-email">
+                Ваша електронна пошта
+              </label>
+              <input
+                class="form-field__input"
+                id="user-email-modal-form"
+                name="user-email-modal-form"
+                type="email"
+                placeholder="Ваша електронна пошта"
+                required
+              />
+            </div>
+            <button type="submit" class="button modal__btn-submit">
+              Записатись безкоштовно
+            </button>
+            <p class="modal__btn-description">
+              Натискаючи на кнопку я погоджуюсь
+              <span class="modal__btn-description--decoration"
+                >з політикою конфіденційності</span
+              >
+            </p>
+          </form>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
