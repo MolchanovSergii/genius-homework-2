@@ -1,7 +1,7 @@
 .for-background {
   position: absolute;
-  bottom: 0; /* Прижимаем к низу родителя */
-  left: 50%; /* Центрируем по горизонтали */
+  bottom: 0;
+  left: 50%;
   transform: translateX(-50%);
   width: 1440px;
   height: 2660px;
@@ -9,6 +9,5 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
   margin: 0 auto;
 }

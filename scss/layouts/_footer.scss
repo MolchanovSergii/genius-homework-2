@@ -1,5 +1,5 @@
 .footer {
-  min-width: 1440px;
+  // min-width: 1440px;
   background-color: var(--primary-color-third);
   background-image: url(../images/footer-background.png);
   background-position: center center;
@@ -17,16 +17,31 @@
 
   &__container {
     position: relative;
-    padding: 56px 0;
+    padding: 32px 90px;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 56px 0;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
   }
 
   &__nav {
     flex-basis: 50%;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      align-items: flex-start;
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 
   &__logo {
@@ -38,12 +53,27 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    text-align: center;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-desktop) {
+      text-align: left;
+      font-size: 16px;
+    }
   }
 
   &__address {
     flex-basis: 50%;
     display: flex;
-    gap: 20px;
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      gap: 20px;
+      align-items: flex-start;
+    }
   }
 
   &__address-link {
@@ -51,7 +81,12 @@
   }
 
   &__address-item {
-    margin-bottom: 16px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      margin-bottom: 16px;
+    }
   }
 
   &__address-social {
@@ -69,11 +104,39 @@
 
   &__address-info {
     flex-basis: 50%;
+    font-size: 14px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 16px;
+    }
   }
 
   &__background {
-    position: absolute;
-    bottom: 0;
-    right: -100px;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -100px;
+    }
+  }
+}
+
+.copyright.copyright-desktop {
+  display: none;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+}
+
+.copyright.copyright-tablet {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: none;
   }
 }
