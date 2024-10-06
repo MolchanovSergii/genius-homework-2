@@ -125,7 +125,6 @@
           </div>
         </div>
       </section>
-      <!-- <div class="for-background"> -->
       <section id="section-about-us" class="container section-about-us">
         <div class="section-about-us__description">
           <h2 class="section-title section-about-us__description__title">
@@ -228,7 +227,10 @@
             Наші <span class="accent">процедури</span>
           </h2>
           <div class="section-our-procedures__slider">
-            <button class="section-our-procedures__button carousel-button prev" type="button">
+            <button
+              class="section-our-procedures__button carousel-button prev"
+              type="button"
+            >
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -329,11 +331,14 @@
               <div class="pagination">
                 <span class="paginaton__button"></span>
                 <span class="paginaton__button"></span>
-                <span class="paginaton__button"><span>
+                <span class="paginaton__button"></span>
                 <span class="paginaton__button"></span>
               </div>
             </div>
-            <button class="section-our-procedures__button carousel-button next" type="button">
+            <button
+              class="section-our-procedures__button carousel-button next"
+              type="button"
+            >
               <svg width="44" height="44">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -424,9 +429,9 @@
               </form>
             </div>
           </div>
+          <div class="for-background">  </div>
         </div>
       </section>
-      <!-- </div> -->
     </main>
     <footer class="footer">
       <div class="container">
@@ -534,8 +539,8 @@
             </label>
             <input
               class="form-field__input"
-              id="user-name"
-              name="user-name"
+              id="user-name-modal-form"
+              name="user-name-modal-form"
               type="text"
               placeholder="Ваше ім'я та прізвище"
               minlength="3"
@@ -549,8 +554,8 @@
             </label>
             <input
               class="form-field__input"
-              id="user-tel"
-              name="user-tel"
+              id="user-tel-modal-form"
+              name="user-tel-modal-form"
               type="tel"
               placeholder="Ваш номер телефону"
               pattern="^\+[0-9]{12}"
@@ -563,8 +568,8 @@
             </label>
             <input
               class="form-field__input"
-              id="user-email"
-              name="user-email"
+              id="user-email-modal-form"
+              name="user-email-modal-form"
               type="email"
               placeholder="Ваша електронна пошта"
               required

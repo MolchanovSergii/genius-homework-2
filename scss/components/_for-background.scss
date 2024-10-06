@@ -1,6 +1,10 @@
 .for-background {
+  position: absolute;
+  bottom: 0; /* Прижимаем к низу родителя */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translateX(-50%);
   width: 1440px;
-  height: 2810px;
+  height: 2660px;
   background: url(../images/procedure-background.svg);
   background-size: contain;
   background-repeat: no-repeat;
