@@ -1,12 +1,14 @@
 .for-background {
   position: absolute;
-  bottom: 1200px;
-  width: 983px;
-  height: 973px;
+  bottom: 134px;
+  // width: 983px;
+  // height: 973px;
+  width: 1440px;
+  height: 2660px;
 
   left: 50%;
   transform: translateX(-50%);
-  background: url(../images/procedure-background-tablet.svg);
+  background: url(../images/procedure-background.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
