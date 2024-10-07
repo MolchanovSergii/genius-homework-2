@@ -2,7 +2,6 @@
   margin-bottom: 24px;
   text-align: center;
 
-  
   &__label {
     color: var(--primary-color-first);
     font-family: Roboto;
@@ -10,7 +9,8 @@
   }
 
   &__input {
-    width: 310px;
+    width: 100%;
+    max-width: 310px;
     height: 52px;
     flex-shrink: 0;
     outline: none;
